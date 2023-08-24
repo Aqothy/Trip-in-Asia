@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" width="device-width,initial-scale=1">
+        <meta name="description" content="Kyoto">
+        <title>Kyoto</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Photo-Gallery.css">
+        <link rel="stylesheet" href="../jquery.flipster.min.css">
+        <script src="https://kit.fontawesome.com/054b81746e.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../Photos3/Plane Icon.png">
+</head>
+
+<body>
+
+    <div id="nav">
+        <a href="../main-Japan.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <div class="dropdown">
+            <i class="fa-solid fa-bars"></i>
+            <div class="dropdown-content">
+              <a class="link" id="Tokyo-link" href="Tokyo.html">Tokyo</a>
+              <a class="link" id="Kyoto-link" href="Kyoto.html">Kyoto</a>
+              <a class="link" id="Nara-link" href="Nara.html">Nara</a>
+              <a class="link" id="Osaka-link" href="Osaka.html">Osaka</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="socials">
+        <a target="_blank" href="https://www.instagram.com/aq3305/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/anthony-qiu-3b8817288/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100010136071124&sk=photos">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Aqothy">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    
+    <div class="gallery">
+        <div class="carousel">
+            <ul>
+                <li class="container">
+                    <img class="image" src="../Photos/IMG_0002.JPG" alt="Onsen">
+                    <div class="content">
+                        <div class="text">This was in mt Fuji which was our stop right before Kyoto, we went to the onsen for the first time! We were all fully naked</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0209.JPG" alt="Village Kyoto">
+                    <div class="content">
+                        <div class="text">One of the hotels we stayed at in Kyoto, we all slept on the ground in the same room, their pjs were also pretty nice</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0225.JPG" alt="Climbing mountain">
+                    <div class="content">
+                        <div class="text">Before climbing the craziest mountain through the big red gates</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0237.JPG" alt="Silly">
+                    <div class="content">
+                        <div class="text">We were being silly bakas</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0242.JPG" alt="Shaved ice">
+                    <div class="content">
+                        <div class="text">Had shaved ice at one of the tourist attractions, mine was really sweet</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0269.JPG" alt="Mountain climbing">
+                    <div class="content">
+                        <div class="text">During the mountain climbing, I was already dying of the heat</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0276.JPG" alt="Conveyor belt sushi">
+                    <div class="content">
+                        <div class="text">We had conveyor belt sushi, lowkey it was mid and also we forgot to play the game</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0136.JPG" alt="Group photo infront of mt Fuji">
+                    <div class="content">
+                        <div class="text">Group photo infront of mt Fuji, with strangers and purple flowers</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+</body>
+</html>

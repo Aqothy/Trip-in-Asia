@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" width="device-width,initial-scale=1">
+        <meta name="description" content="Nara">
+        <title>Nara</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Photo-Gallery.css">
+        <link rel="stylesheet" href="../jquery.flipster.min.css">
+        <script src="https://kit.fontawesome.com/054b81746e.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../Photos3/Plane Icon.png">
+</head>
+
+<body>
+
+    <div id="nav">
+        <a href="../main-Japan.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        
+        <div class="dropdown">
+            <i class="fa-solid fa-bars"></i>
+            <div class="dropdown-content">
+              <a class="link" id="Tokyo-link" href="Tokyo.html">Tokyo</a>
+              <a class="link" id="Kyoto-link" href="Kyoto.html">Kyoto</a>
+              <a class="link" id="Nara-link" href="Nara.html">Nara</a>
+              <a class="link" id="Osaka-link" href="Osaka.html">Osaka</a>
+            </div>
+        </div> 
+
+    </div>
+
+    <div id="socials">
+        <a target="_blank" href="https://www.instagram.com/aq3305/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/anthony-qiu-3b8817288/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100010136071124&sk=photos">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Aqothy">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    
+    <div class="gallery">
+        <div class="carousel">
+            <ul>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0223.JPG" alt="Deer">
+                    <div class="content">
+                        <div class="text">Very excited to feed the deers</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0224.JPG" alt="More deer">
+                    <div class="content">
+                        <div class="text">Kneeling down to feed the deer, I think he/she might've bowed at me</div>
+                    </div>
+                </li>
+                <li class="container">
+                    <img class="image" src="../Photos2/IMG_0254.JPG" alt="Petting deer">
+                    <div class="content">
+                        <div class="text">Petting the deer</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
+</body>
+</html>

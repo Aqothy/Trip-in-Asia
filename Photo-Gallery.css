@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    Overflow: hidden;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+}
+
+*{
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+}
+
+#nav{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    animation: left-in 1250ms ease-in-out;
+    display: flex;
+    gap: 2rem;
+}
+
+#socials{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    display: flex;
+    gap: 2rem;
+    animation: right-in 1250ms ease-in-out;
+}
+  
+.dropdown i{
+    font-size: 35px;  
+    color: rgb(255, 245, 240);
+}
+
+i:hover{
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 245, 240);
+    min-width: 90px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: rgb(15, 15, 15);
+    padding: 5px 7px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    animation: pulse 1000ms ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+a{
+    color: rgb(255, 245, 240);
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: rgb(255, 245, 240);
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.dropdown .dropdown-content .link:hover:after{
+    width: 0;
+}
+
+.dropdown .dropdown-content #Tokyo-link {
+    background-size: cover;
+    background-position: center;
+    background-image: url(Photos3/Tokyo.jpeg);  
+}
+
+.dropdown .dropdown-content #Kyoto-link {
+    background-size: cover;
+    background-position: center;
+    background-image: url(Photos3/Kyoto.jpeg);
+}
+
+.dropdown .dropdown-content #Nara-link {
+    background-size: cover;
+    background-position: center;
+    background-image: url(Photos3/Nara.webp);  
+}
+
+.dropdown .dropdown-content #Osaka-link {
+    background-size: cover;
+    background-position: center;
+    background-image: url(Photos3/Osaka.jpeg);  
+}
+
+.gallery{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gallery .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+    animation: slide-in 1500ms ease-in-out 500ms;
+}
+
+.carousel .image{
+    -webkit-box-reflect: below 10px linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.7));
+    height: 550px;
+    width: 410px;
+}
+
+.content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+}
+  
+.container:hover .content {
+    opacity: 1;
+}
+  
+.text {
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: rgb(255, 245, 240);
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+@keyframes slide-in{
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+      }
+      75% {
+        opacity: 0.35;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
+
+@keyframes left-in{
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+      }
+      75% {
+        opacity: 0.35;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+@keyframes right-in{
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+      }
+      75% {
+        opacity: 0.35;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+@keyframes pulse {
+    from, to {
+      scale: 1;
+    }
+    
+    50% {
+      scale: 1.08;
+    }
+}
+
